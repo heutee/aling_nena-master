@@ -11,14 +11,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="/css/admin.css" rel="stylesheet">
-
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link type="text/css" href="/css/bought-product.css" rel="stylesheet">
   </head>
 
   <body>
@@ -40,40 +41,40 @@
     <div class="container">
       <div class="admin">
       <h1>Item Bought!</h1>
-      <p><%="Bought #{@product.quantity} units of #{@product.name}. Your change is #{@cash.change} in the following denominations:"%></p>
+      <p><%="Bought #{@to_buy} units of #{@product.name}. Your change is in the following denominations:"%></p>
         <table class="table table-striped">
           <tbody>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.ones %></td>
+              <td><IMG SRC="/1.jpg"/></td>
+              <td><%= @change[:ones] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.fives %></td>
+              <td><IMG SRC="/5.jpg"/></td>
+              <td><%= @change[:fives] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.tens %></td>
+              <td><IMG SRC="/10.jpg"/></td>
+              <td><%= @change[:tens] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.twenties %></td>
+              <td><IMG SRC="/20.jpg"/></td>
+              <td><%= @change[:twenties] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.fifties %></td>
+              <td><IMG SRC="/50.jpg"/></td>
+              <td><%= @change[:fifties] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.hundreds %></td>
+              <td><IMG SRC="/100.jpg"/></td>
+              <td><%= @change[:hundreds] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.five_hundreds %></td>
+              <td><IMG SRC="/500.jpg"/></td>
+              <td><%= @change[:five_hundreds] %></td>
             </tr>
             <tr>
-              <td><IMG SRC="__"/></td>
-              <td><%= @change.thousands %></td>
+              <td><IMG SRC="/1000.jpg"/></td>
+              <td><%= @change[:thousands] %></td>
             </tr>       
           </tbody>          
         </table>

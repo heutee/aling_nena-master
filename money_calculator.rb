@@ -1,5 +1,5 @@
 class MoneyCalculator
-attr_accessor :ones, :fives, :tens, :twenties, :fifties, :hundreds, :five_hundreds, :thousands, :total_paid
+attr_accessor :ones, :fives, :tens, :twenties, :fifties, :hundreds, :five_hundreds, :thousands, :total_paid, :total_change
 
   def initialize(ones, fives, tens, twenties, fifties, hundreds, five_hundreds, thousands)
     # each parameter represents the quantity per denomination of money
@@ -25,7 +25,8 @@ attr_accessor :ones, :fives, :tens, :twenties, :fifties, :hundreds, :five_hundre
 
   def change(amt_due)
   	to_change = @total_paid - amt_due
-  	
+  	@total_change = to_change
+    
     if to_change >= 1000
         @thousands = to_change/1000
         to_change = to_change%1000

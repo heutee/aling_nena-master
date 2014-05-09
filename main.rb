@@ -43,6 +43,7 @@ post '/purchased/:id' do
     sold: num_sold,
     )   
     @change = @cash.change(amt_due)
+    @change_amt = @cash.total_change
     erb :product_bought
   end
 end
