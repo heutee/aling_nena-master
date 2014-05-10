@@ -4,6 +4,7 @@ body {
     background-image: url('/bg.png');
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
+    color: #0d0c0d;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 }
 
 a:hover, a:active {
-    color: #000;
+    color: #0d0c0d;
     text-decoration:none;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
@@ -51,15 +52,18 @@ h2 {
 #container {
     width: 500px;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: 75px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     float: right;
     display: block;
     vertical-align: middle;
     background-image: url('/bg2.png');
     background-repeat: repeat;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
 }
 
 
@@ -83,18 +87,19 @@ h2 {
 }
 
 #home_x {
-    color: #000;
+    color: #0d0c0d;
 }
 
 #home_x:hover {
     color: #8b0808;
 }
 
-/* FOR INDEX */
+/* FOR NAVBAR/BANNER */
 /* 
-
-
-
+BEGIN PARTIAL SOURCE CREDIT
+SOURCE: obtained from: http://pastebin.com/sHBXuAZa
+DATE: May 10, 2014
+NAME OF AUTHOR/PROGRAMMER: primrosetylers@tumblr.com
 */
 
 #banner {
@@ -174,7 +179,7 @@ h2 {
 }
     
 #nav a:hover {
-    color:#000;
+    color:#0d0c0d;
     -webkit-transition:1s;
     -moz-transition:1s;
     -o-transition:1s;
@@ -186,17 +191,16 @@ h2 {
     bottom:10px;
     font-size:16px;
     padding:5px;
-    color: #000;
+    color: #0d0c0d;
     opacity:0.8;
     text-decoration:none;
     }
 
 /* 
-
-
-
+END PARTIAL SOURCE CREDIT
 */
 
+/* FOR INDEX */
 .product_case {
     width: 400px;
     height:  40px;
@@ -204,60 +208,68 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 5px;
-    text-align: center;
-    vertical-align: middle;
-    padding: auto;
-    background-image: url('/bg2.png');
+    position: relative;
+    background-image: url('/bg3.png');
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
-    position: static;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
     -o-transition:0.5s;
 }
 
-.product_info {
+.product_name {
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+}
 
+.product_case:hover .product_name {
+    opacity: 0;
+    display: block;
+    background-color: #0d0c0d;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
 }
 
 .purchase {
     width: 400px;
-    height:  40px;
-    margin-top: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 5px;
+    height:  30px;
     text-align: center;
-    display: none;
-    opacity: 1;
+    margin-top: -31px;
+    padding-top: 10px;
+    position: absolute;
+    opacity: 0;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
     -o-transition:0.5s;
 }
 
-.product_item:hover .purchase {
-    opacity: 1;
+.purchase a:hover {
+    color:#fff;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -o-transition:1s;
+}
+
+.product_case:hover .purchase {
+    opacity: 0.8;
     display: block;
-    background-color: #000;
+    background-color: #0d0c0d;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
     -o-transition:0.5s;
-}
-
-/* FOR ABOUT */
-
-#about {
-    font-family: 'Roboto', sans-serif;
 }
 
 /* FOR ERROR */
 
 #error {
-    font-size: 50px;
+    text-align: center;
+    font-size: 80px;
     font-family: 'Oswald', sans-serif;
 }    
 
-/* FOR BUY_PRODUCT */
+/* FOR BUY_PRODUCT || PRODUCT_BOUGHT */
 
 .pay_coins {
     width: 75px;

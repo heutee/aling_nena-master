@@ -10,7 +10,7 @@
 
 </head>
 
-<body background="">
+<body>
 
 <div id="banner">
 <div id="top">
@@ -25,7 +25,7 @@
 
 <div id="container">
   <center>
-      <table class="table table-striped">
+      <table>
         <thead>
           <tr>
             <td>NAME</td>
@@ -39,7 +39,7 @@
             <td><%= product.name %></td>
             <td>₱<%= product.price %></td>
             <td><%= product.quantity %></td>
-            <td><a href="/purchase/<%= product.id %>" class="btn btn-default btn-primary">Buy</a></td>
+            <td><a href="/purchase/<%= product.id %>" class="btn btn-default btn-primary">BUY</a></td>
           </tr>
         <% end %>          
         </tbody>          

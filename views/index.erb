@@ -25,8 +25,9 @@
 
 <div id="container">
     <% @rand_products.each do |product| %>
-    <div class = "product_case"><a href="/purchase/<%= product.id %>"><div class="product_info"><%= product.name %> (₱<%= product.price %>)</div><div class = "purchase">BUY</a></div></div>
+    <div class = "product_case"><div class="product_name"><%= product.name %> (₱<%= product.price %>)</div><a href="/purchase/<%= product.id %>"><div class = "purchase">BUY</a></div></div>
     <% end %>
+    <br/>
     <p align="right"><a href="/products">VIEW ALL PRODUCTS&#8594;</a></p>      
 </div>
 
