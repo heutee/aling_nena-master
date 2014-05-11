@@ -52,18 +52,18 @@ h2 {
 #container {
     width: 500px;
     height: 100%;
-    margin-top: 30px;
-    margin-right: 75px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-right: 60px;
+    margin-bottom: 35px;
     float: right;
     display: block;
     vertical-align: middle;
     background-image: url('/bg2.png');
     background-repeat: repeat;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
 
 
@@ -106,7 +106,7 @@ NAME OF AUTHOR/PROGRAMMER: primrosetylers@tumblr.com
     width:500px;
     height:300px;
     margin-top:210px;
-    margin-left:75px;
+    margin-left:60px;
     margin-bottom: auto;
     float: left;
 }
@@ -185,6 +185,16 @@ NAME OF AUTHOR/PROGRAMMER: primrosetylers@tumblr.com
     -o-transition:1s;
 }
 
+#hover{
+    position:fixed;
+    left:460px;
+    top:420px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
 #credit a {
     position:fixed;
     right:10px;
@@ -201,6 +211,13 @@ END PARTIAL SOURCE CREDIT
 */
 
 /* FOR INDEX */
+/* 
+BEGIN PARTIAL SOURCE CREDIT
+MODELED HEAVILY AFTER (BUT NOT DIRECTLY COPIED)
+SOURCE: obtained from: http://pastebin.com/XHLaTyW6
+DATE: May 10, 2014
+NAME OF AUTHOR/PROGRAMMER: LOSTMEMENTO
+*/
 .product_case {
     width: 400px;
     height:  40px;
@@ -260,6 +277,10 @@ END PARTIAL SOURCE CREDIT
     -moz-transition:0.5s;
     -o-transition:0.5s;
 }
+
+/* 
+END PARTIAL SOURCE CREDIT
+*/
 
 /* FOR ERROR */
 
